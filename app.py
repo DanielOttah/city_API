@@ -1,5 +1,6 @@
 import os
 import traceback
+from flask_restful import Api
 from flask import Flask, jsonify, request, render_template
 from flask_cors import CORS
 import json
@@ -7,8 +8,10 @@ import json
 data = {}
 
 app = Flask(__name__)
-app.secret_key = os.urandom(16)
+# app.secret_key = os.urandom(16)
+app.secret_key = 'dany'
 CORS(app, supports_credentials=True)
+api = Api(app)
 
 
 @app.route("/")
@@ -108,12 +111,7 @@ def load():
     print("data1:", data)
     with open('data.json') as json_file:
         data = json.load(json_file)
-        for d in data:
-            print('Record: ', d)
-    print("data2:", data)
-    # return jsonify(list(data.values())), 200
     return "<h1>EvolveU test</h1> <h2>" + str(len(data)) + " records has been loaded</h2>"
-    # return return jsonify(list(data.values())),200
 
 
 @app.route("/save", methods=['POST'])
@@ -122,7 +120,6 @@ def save():
     with open('data.json', 'w') as outfile:
         json.dump(data, outfile)
     return jsonify(list(data.values())), 200
-    # return "<h1>EvolveU test</h1> <h2>" + str(len(data)) + " records Saved</h2>"
 
 
 @app.route("/clear", methods=['POST', 'GET'])
@@ -132,22 +129,7 @@ def clear():
     return jsonify(data), 200
 
 
-@app.route("/test", methods=['POST', 'GET'])
-def test():
-    try:
-        content = request.get_json()
-        # print('in /test request: ',request)
-        # print('in /test path: ',request.path)
-        # print('in /test form: ',request.form)
-        # print('in /test parms: ',request.args)
-        # print('in /test json: ',request.get_json())
-        return jsonify({'status': 'ok'}), 200
-    except Exception as e:
-        traceback.print_stack()
-        print('**** Not a valid request. ', e)
-    return jsonify('{}'), 400
-
-
 if __name__ == '__main__':
     print("--- Starting", __file__)
-    app.run(debug=True, use_reloader=True)
+    # app.run(debug=True, use_reloader=True)
+    app.run(port=3900, debug=True)
