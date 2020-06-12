@@ -1,0 +1,123 @@
+{
+    "1": {
+        "key": 1,
+        "code": "Manual",
+        "Name": "Calgary",
+        "Latitude": 51.03,
+        "Longitude": -114.04,
+        "Population": 1285711
+    },
+    "2": {
+        "key": 2,
+        "code": "Manual",
+        "Name": "Edmonton",
+        "Latitude": 53.55,
+        "Longitude": -113.49,
+        "Population": 972223
+    },
+    "3": {
+        "key": 3,
+        "code": "Manual",
+        "Name": "Red Deer",
+        "Latitude": 52.28,
+        "Longitude": -113.81,
+        "Population": 101002
+    },
+    "4": {
+        "key": 4,
+        "code": "Auto",
+        "NativeName": "Shqip\u00ebria",
+        "CountryName": "Albania",
+        "CallingCodes": "355",
+        "Region": "Europe",
+        "Subregion": "Southern Europe",
+        "TimeZone": "UTC+01:00",
+        "Population": 2886026,
+        "Location": [
+            41,
+            20
+        ],
+        "Area": 28748,
+        "borders": [
+            "MNE",
+            "GRC",
+            "MKD",
+            "KOS"
+        ],
+        "flag": "https://restcountries.eu/data/alb.svg",
+        "Name": "Tirana",
+        "Demonym": "Albanian"
+    },
+    "5": {
+        "key": 5,
+        "code": "Auto",
+        "NativeName": "Norge",
+        "CountryName": "Norway",
+        "CallingCodes": "47",
+        "Region": "Europe",
+        "Subregion": "Northern Europe",
+        "TimeZone": "UTC+01:00",
+        "Population": 5223256,
+        "Location": [
+            62,
+            10
+        ],
+        "Area": 323802,
+        "borders": [
+            "FIN",
+            "SWE",
+            "RUS"
+        ],
+        "flag": "https://restcountries.eu/data/nor.svg",
+        "Name": "Oslo",
+        "Demonym": "Norwegian"
+    },
+    "6": {
+        "key": 6,
+        "code": "Auto",
+        "NativeName": "\u0426\u0440\u043d\u0430 \u0413\u043e\u0440\u0430",
+        "CountryName": "Montenegro",
+        "CallingCodes": "382",
+        "Region": "Europe",
+        "Subregion": "Southern Europe",
+        "TimeZone": "UTC+01:00",
+        "Population": 621810,
+        "Location": [
+            42.5,
+            19.3
+        ],
+        "Area": 13812,
+        "borders": [
+            "ALB",
+            "BIH",
+            "HRV",
+            "KOS",
+            "SRB"
+        ],
+        "flag": "https://restcountries.eu/data/mne.svg",
+        "Name": "Podgorica",
+        "Demonym": "Montenegrin"
+    },
+    "7": {
+        "key": 7,
+        "code": "Auto",
+        "NativeName": "\u039a\u03cd\u03c0\u03c1\u03bf\u03c2",
+        "CountryName": "Cyprus",
+        "CallingCodes": "357",
+        "Region": "Europe",
+        "Subregion": "Southern Europe",
+        "TimeZone": "UTC+02:00",
+        "Population": 847000,
+        "Location": [
+            35,
+            33
+        ],
+        "Area": 9251,
+        "borders": [
+            "GBR"
+        ],
+        "flag": "https://restcountries.eu/data/cyp.svg",
+        "Name": "Nicosia",
+        "Demonym": "Cypriot"
+    }
+}
