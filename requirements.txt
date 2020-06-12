@@ -4,3 +4,4 @@ Flask-Cors
 requests
 json
 uwsgi
+gunicorn
